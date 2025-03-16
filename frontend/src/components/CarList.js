@@ -213,7 +213,7 @@ const CarList = () => {
             <div className="car-cards">
                 {currentCars.map(car => (
                     <div key={car.id} className="car-card">
-                        <Link to={`/car/${car.make}/${car.model}/${car.year}`}>
+                        <Link to={`/car/${car.id}`}>
                             <h3>{car.make} {car.model}</h3>
                             <p>Année: {car.year}</p>
                             <p className="price">Prix: {car.price} €</p>
